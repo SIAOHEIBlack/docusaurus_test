@@ -18,10 +18,10 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'SIAOHEIBlack', // Usually your GitHub org/user name.
+  projectName: 'docusaurus_test', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -30,6 +30,15 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        path: 'en'
+      }
+    }
   },
 
   presets: [
