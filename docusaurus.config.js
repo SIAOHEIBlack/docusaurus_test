@@ -58,6 +58,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        blog: {
+          blogTitle: 'Docusaurus blog！',
+          blogDescription: 'A Docusaurus powered blog!',
+          postsPerPage: 'ALL'
+        }
       }),
     ],
   ],
@@ -79,6 +84,11 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            to: 'blog',
+            label: 'Blog',
+            position: 'left',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
